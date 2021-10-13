@@ -4,6 +4,7 @@
 const Navigation = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
+<<<<<<< Updated upstream
             <div className="container-fluid">
                 <span className="navbar-brand">Navbar</span>
 
@@ -32,6 +33,9 @@ const Navigation = () => {
                     </ul>
                 </div>
             </div>
+=======
+          <h1>Navigation</h1>
+>>>>>>> Stashed changes
         </nav>
 
     )
