@@ -5,12 +5,13 @@ import axios from "axios"
 const Home = () => {
 
     useEffect(() => {
-        axios.get("http://ec2-54-147-59-92.compute-1.amazonaws.com/api/items")
-        .then((response) => {
-            console.log(response);
-        })
-        .catch((error) => console.log(error));
+        let url1 = "https://jsonplaceholder.typicode.com/photos"
+        // let url2 = "http://ec2-54-147-59-92.compute-1.amazonaws.com/api/items/" 
 
+        axios.get(url1).then(response => {
+            console.log(response.data)
+        })
+        .catch(error => console.log(error))
     }, [])
 
     return(
